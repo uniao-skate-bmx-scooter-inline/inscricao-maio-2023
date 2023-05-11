@@ -4,6 +4,6 @@ const form = document.getElementById('my-form').addEventListener('submit', (e) =
             method: 'POST',
             body: new FormData(e.target)
       }).then(() => {
-            window.location.href = 'https://www.google.com'
+            window.location.href = 'fim.html'
       })
 })
