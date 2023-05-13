@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscricao</title>
+    <link rel = "shortcut icon" type = "imagem/x-icon" href = "img/logo.png"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css" media="screen and (min-width: 450px)" media="screen and (max-width: 500px)" />
+    <!-- <link rel="stylesheet" href="css/style2.css" media="screen and (max-width: 600px)" /> -->
+
+    <script src="js/index.js" defer></script>
+</head>
+
+
+<body>
+    <div class="box">
+        <div id="menu" class="menu">
+
+            <h1>Escolha sua modalidade</h1>
+            <button class="clbt" onclick="bmx('my-form')">BMX</button>
+            <button class="clbt" onclick="skate('my-form2')">SKATE</button>    
+        </div>
+
+        <button id="btf" style="position: absolute; display: none; width: 8%; padding: 3px; margin-left: 75.3%; margin-top: 1%;"  onclick="btf('btf')">X</button>
+
+
+        <form style="display: none;" id="my-form" action="https://formsubmit.co/ajax/thiagoweverson@gmail.com" method="POST" allowfullscreen>
+            <h1 style=" margin-bottom: 2%; ">DADOS PARA INSCRIÇÃO BMX</h1>
+
+
+            <input class="inp" type="text" name="name BMX" placeholder="Nome completo" maxlength="40" required>
+
+ 
+    
+            <input class="inp" type="text" name="apelido" placeholder="Apelido" maxlength="50" required>
+    
+ 
+    
+            <input class="inp" type="number" name="idade" placeholder="Idade" maxlength="2" required>
+    
+    
+    
+            <input class="inp" type="text" name="cidade" placeholder="Cidade" maxlength="50" required>
+    
+    
+            <div class="divcat">
+                <p class="clp">Categoria</p>
+
+                <input style="border: 1px solid red;" class="cat" type="radio" id="aceita" name="categoria" value="OPEN" required>
+                <label class="cat" for="aceita">OPEN</label>
+                &nbsp;&nbsp;&nbsp;
+                <input class="cat" type="radio" id="nao aceita" name="categoria" value="PROFICIONAL" required>
+                <label class="cat" for="nao aceita">PROFICIONAL</label>   
+            </div>
+    
+
+            <input class="inp" type="text" name="Instagram" placeholder="instagram" maxlength="80">
+
+
+    
+
+            <button type="submit">ENVIAR</button>
+   
+    
+
+            <!-- Configuraçoes da pagina  -->
+
+            <input type="hidden" name="_subject" value="Nova inscrição BMX!"> <!-- notificar nova inscricao -->
+            
+            <input type="text" name="_honey" style="display:none"> <!-- evitar span -->
+            
+            <input type="hidden" name="_captcha" value="false">  <!-- desabilitar captcha -->
+        </form>
+
+
+
+        <form style="display: none;" id="my-form2" action="https://formsubmit.co/ajax/thiagoweverson@gmail.com" method="POST">
+
+            <h1 style=" margin-bottom: 2%; ">DADOS PARA INSCRIÇÃO SKATE</h1>
+
+
+            <input class="inp" type="text" name="name KS8" placeholder="Nome completo" maxlength="60" required>
+
+ 
+    
+            <input class="inp" type="text" name="apelido" placeholder="Apelido" maxlength="50" required>
+    
+ 
+    
+            <input class="inp" type="number" maxlength="5" name="idade" placeholder="Idade" required>
+    
+    
+    
+            <input class="inp" type="text" name="cidade" placeholder="Cidade" maxlength="50" required>
+
+
+            <div class="divcat">
+                <p class="clp">Categoria</p>
+            
+                <input class="cat" type="radio" id="sk81" name="categoria" value="iniciante" required>
+            
+                <label class="cat" for="sk81">INICIANRTE</label>&nbsp;&nbsp;
+
+                <input class="cat" type="radio" id="sk82" name="categoria" value="open" required>
+            
+                <label class="cat" for="sk82">OPEN</label>
+            </div>
+    
+
+            <input class="inp" type="text" name="Instagram" placeholder="instagram" maxlength="80">
+
+
+    
+
+            <button type="submit">ENVIAR</button>
+   
+    
+
+            <!-- Configuraçoes da pagina  -->
+
+            <input type="hidden" name="_subject" value="Nova inscrição SK8!"> <!-- notificar nova inscricao -->
+            <input type="text" name="_honey" style="display:none"> <!-- evitar span -->
+            <input type="hidden" name="_captcha" value="false">  <!-- desabilitar captcha -->
+        </form>
+    </div>
+</body>
+</html>
